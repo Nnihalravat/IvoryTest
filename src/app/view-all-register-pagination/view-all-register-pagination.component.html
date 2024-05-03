@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>Full Name</th>
+              <!-- Add other table headers -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let register of registers">
+              <td>{{ register.fullName }}</td>
+              <td> {{register.designation}} </td>
+              <!-- Add other table cells -->
+            </tr>
+          </tbody>
+        </table>
+  
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item" [class.disabled]="currentPage === 1">
+              <a class="page-link" href="#" aria-label="Previous" (click)="onPageChange(currentPage - 1)">
+                <span aria-hidden="true">&laquo;</span>
+              </a>
+            </li>
+            <li class="page-item" *ngFor="let page of totalPagesArray()" [class.active]="page === currentPage">
+              <a class="page-link" href="#" (click)="onPageChange(page)">{{ page }}</a>
+            </li>
+            <li class="page-item" [class.disabled]="currentPage === totalPages">
+              <a class="page-link" href="#" aria-label="Next" (click)="onPageChange(currentPage + 1)">
+                <span aria-hidden="true">&raquo;</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+
+  

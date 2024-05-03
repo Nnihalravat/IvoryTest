@@ -1,0 +1,15 @@
+/* userform.component.css */
+
+.error-message {
+    color: red;
+    font-size: 12px;
+  }
+  
+  label{
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .space{
+    margin-top: 170px;
+  }
