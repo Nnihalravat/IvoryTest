@@ -1,6 +1,11 @@
 .delete{
-    border: blue;
+    border: rgb(255, 255, 255);
    
-    background-color: rgb(2, 0, 3);
+    background-color: rgb(255, 0, 17);
     color: white;
+}
+
+.success-message{
+    color: red;
+    font-weight: 500;
 }

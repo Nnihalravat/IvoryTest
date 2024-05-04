@@ -1,0 +1,26 @@
+.next{
+    background-color: blue;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.next:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.previous{
+    background-color: rgb(9, 85, 9);
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.previous:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+

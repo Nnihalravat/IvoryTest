@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { Observable, catchError, throwError } from 'rxjs';
 import { environment } from 'src/environment';
 
 @Injectable({
@@ -30,6 +30,10 @@ export class RegistrationServiceService {
   }
 
   deleteRegisters():Observable<any>{
-    return this.http.delete(`${this.url}/Delete-Registers`)
+    return this.http.delete(`${this.url}/Delete-Reggisters`)
   }
+
+
+
+ 
 }

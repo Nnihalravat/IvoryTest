@@ -1,0 +1,55 @@
+.post{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 2px;
+}
+
+.post:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border :2px solid black;
+    border-radius: 2px;
+}
+
+.view:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border :2px solid black;
+    border-radius: 2px;
+}
+
+.all:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border :2px solid black;
+    border-radius: 2px;
+}
+
+.delete:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border :2px solid black;
+    border-radius: 2px;
+}
+
+
+
+.view{
+    background-color: rgb(82, 54, 3);
+    color: white;
+    border: none;
+}
+
+.all{
+    background-color: rgb(2, 14, 39);
+    color: white;
+    border: none;
+}
+.delete{
+
+background-color: rgb(99, 6, 6);
+    color: white;
+    border: none;
+
+}

@@ -1,8 +1,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-10 mx-auto mt-3">
-            <button (click)="onDelete()" class="delete"> Click here to delete All Registers</button>
+            <button (click)="deleteAll()" class="delete">Click here to delete All Registers</button>
+            <div *ngIf="deleteSuccess" class="success-message">
+                Registers deleted successfully!
+            </div>
         </div>
-       
     </div>
 </div>

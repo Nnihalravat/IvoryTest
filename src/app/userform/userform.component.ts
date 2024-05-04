@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 export class UserformComponent implements OnInit {
   registrationForm: FormGroup;
   registers!:any[];
+  isFormValid: boolean = false; // Add a property to track form validity
+
+  
+
 
   constructor(private fb: FormBuilder, private userService: RegistrationServiceService, private route: Router) {
     this.registrationForm = this.fb.group({
@@ -26,7 +30,12 @@ export class UserformComponent implements OnInit {
       education: ['', Validators.required],
       designation: ['', Validators.required],
     });
-  }
+
+      // Subscribe to form value changes to track form validity
+      this.registrationForm.valueChanges.subscribe(() => {
+        this.isFormValid = this.registrationForm.valid;
+      });
+    }
 
 onSubmit() {
   if (this.registrationForm.valid) {
@@ -38,7 +47,7 @@ onSubmit() {
       },
       () => {
         console.log('Record Inserted Successfully',userData);
-        alert("Success");
+        alert("Record Inserted Successfully");
         this.route.navigateByUrl('/viewall');
       }
     );
