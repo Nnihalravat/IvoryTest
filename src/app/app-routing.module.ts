@@ -6,10 +6,10 @@ import { DeleteUsersComponent } from './delete-users/delete-users.component';
 
 const routes: Routes =
   [
-    { path: 'users', loadChildren: () => import('./userform/userform.module').then(m => m.UserformModule) },
+    { path: 'users', loadChildren: () => import('./userform/userform.module').then(m => m.UserformModule), title:'Registration-form' },
     { path: 'viewall', component: ViewALLComponent, title: 'ViewAll' },
-    { path: 'see', component: SeeComponent },
-    { path: 'deleteRegs', component: DeleteUsersComponent }
+    { path: 'see', component: SeeComponent ,  title: 'View-Regs-Pagination'},
+    { path: 'deleteRegs', component: DeleteUsersComponent, title:'Delete=Registers' }
   ];
 
 @NgModule({
